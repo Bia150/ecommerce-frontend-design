@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - Product Detail</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/product-detail.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-main container">
+            <a class="brand-link" href="./home.html" aria-label="Brand home">
+                <img src="../../assets/Layout/Brand/logo-colored.png" alt="Brand">
+            </a>
+            <form class="header-search" role="search">
+                <input type="search" placeholder="Search" aria-label="Search products">
+                <select aria-label="Select category">
+                    <option>All category</option>
+                    <option>Mobile accessory</option>
+                    <option>Clothes</option>
+                    <option>Home interiors</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+            <nav class="header-actions" aria-label="User tools">
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></a>
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg><span>Message</span></a>
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12v20l-6-3-6 3z"/></svg><span>Orders</span></a>
+                <a class="action-link" href="./cart.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M3 4h2l2.3 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 1.9-1.5L22 8H6"/></svg><span>My cart</span></a>
+            </nav>
+        </div>
+        <div class="header-nav">
+            <div class="nav-row container">
+                <nav class="nav-menu" aria-label="Primary navigation">
+                    <button type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>All category</button>
+                    <a href="#">Hot offers</a>
+                    <a href="#">Gift boxes</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Menu item</a>
+                    <button type="button">Help <span aria-hidden="true">v</span></button>
+                </nav>
+                <div class="nav-meta">
+                    <button type="button">English, USD <span aria-hidden="true">v</span></button>
+                    <button type="button">Ship to <img src="../../assets/Layout1/Image/flags/DE@2x.png" alt="Germany"> <span aria-hidden="true">v</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page detail-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="./home.html">Home</a><span>&gt;</span><a href="#">Clothing</a><span>&gt;</span><a href="#">Men's wear</a><span>&gt;</span><span>Summer clothing</span>
+            </nav>
+
+            <section class="detail-card surface" aria-label="Product overview">
+                <div class="product-gallery">
+                    <div class="main-image-wrap">
+                        <img id="main-product-image" src="../../assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="Men's shirt">
+                    </div>
+                    <div class="thumbnail-row" aria-label="Product image thumbnails">
+                        <button class="thumb is-active" type="button" data-image="../../assets/Layout/alibaba/Image/cloth/Bitmap.png" data-alt="Men's shirt"><img src="../../assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="Men's shirt thumbnail"></button>
+                        <button class="thumb" type="button" data-image="../../assets/Layout/alibaba/Image/cloth/2 1.png" data-alt="Winter jacket"><img src="../../assets/Layout/alibaba/Image/cloth/2 1.png" alt="Winter jacket thumbnail"></button>
+                        <button class="thumb" type="button" data-image="../../assets/Layout/alibaba/Image/cloth/image 30.png" data-alt="Blue blazer"><img src="../../assets/Layout/alibaba/Image/cloth/image 30.png" alt="Blue blazer thumbnail"></button>
+                        <button class="thumb" type="button" data-image="../../assets/Layout/alibaba/Image/cloth/Bitmap (2).png" data-alt="Denim shorts"><img src="../../assets/Layout/alibaba/Image/cloth/Bitmap (2).png" alt="Denim shorts thumbnail"></button>
+                        <button class="thumb" type="button" data-image="../../assets/Layout/alibaba/Image/cloth/image 26.png" data-alt="Blue backpack"><img src="../../assets/Layout/alibaba/Image/cloth/image 26.png" alt="Backpack thumbnail"></button>
+                        <button class="thumb" type="button" data-image="../../assets/Layout/alibaba/Image/cloth/image 24.png" data-alt="Blue wallet"><img src="../../assets/Layout/alibaba/Image/cloth/image 24.png" alt="Wallet thumbnail"></button>
+                    </div>
+                </div>
+
+                <div class="product-summary">
+                    <p class="stock">&#10003; In stock</p>
+                    <h1 id="product-title">Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+                    <div class="summary-rating">
+                        <span class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; <span id="product-rating">4.7</span></span>
+                        <span id="product-reviews">32 reviews</span>
+                        <span id="product-sold">154 sold</span>
+                    </div>
+                    <div class="price-tiers" aria-label="Quantity price tiers">
+                        <div><strong id="tier-price-one">$98.00</strong><span>50-100 pcs</span></div>
+                        <div><strong id="tier-price-two">$90.00</strong><span>100-700 pcs</span></div>
+                        <div><strong id="tier-price-three">$78.00</strong><span>700+ pcs</span></div>
+                    </div>
+                    <div class="detail-buy-box" aria-label="Purchase options">
+                        <label for="detail-quantity">Quantity</label>
+                        <select id="detail-quantity">
+                            <option value="1">Qty: 1</option>
+                            <option value="2">Qty: 2</option>
+                            <option value="3">Qty: 3</option>
+                            <option value="4">Qty: 4</option>
+                            <option value="5">Qty: 5</option>
+                        </select>
+                        <button class="button button-primary" type="button" id="add-to-cart">Add to cart</button>
+                    </div>
+                    <dl class="product-meta">
+                        <div><dt>Price:</dt><dd id="meta-price">Negotiable</dd></div>
+                        <div><dt>Type:</dt><dd id="meta-type">Classic shoes</dd></div>
+                        <div><dt>Material:</dt><dd id="meta-material">Plastic material</dd></div>
+                        <div><dt>Design:</dt><dd id="meta-design">Modern nice</dd></div>
+                        <div><dt>Customization:</dt><dd id="meta-customization">Customized logo and design custom packages</dd></div>
+                        <div><dt>Protection:</dt><dd>Refund Policy</dd></div>
+                        <div><dt>Warranty:</dt><dd id="meta-warranty">2 years full warranty</dd></div>
+                    </dl>
+                </div>
+
+                <aside class="supplier-card" aria-label="Supplier information">
+                    <div class="supplier-heading">
+                        <span>R</span>
+                        <p>Supplier<br><strong id="supplier-name">Guanjoi Trading LLC</strong></p>
+                    </div>
+                    <ul class="supplier-facts">
+                        <li><img src="../../assets/Layout1/Image/flags/DE@2x.png" alt="Germany"> Germany, Berlin</li>
+                        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4z"/><path d="M4 7l8 6 8-6"/></svg> Verified Seller</li>
+                        <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3z"/><path d="M16 10h3l2 3v4h-5z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg> Worldwide shipping</li>
+                    </ul>
+                    <button class="button button-primary" type="button" id="supplier-add-to-cart">Add to cart</button>
+                    <a class="button button-outline" href="#">Send inquiry</a>
+                    <a class="button button-outline" href="#">Seller's profile</a>
+                    <button class="save-later" type="button">&#9825; Save for later</button>
+                </aside>
+            </section>
+
+            <div class="detail-content">
+                <section class="description-card surface" aria-label="Product information">
+                    <div class="tabs" role="tablist" aria-label="Product details tabs">
+                        <button class="tab-button is-active" type="button" data-tab="description" role="tab" aria-selected="true">Description</button>
+                        <button class="tab-button" type="button" data-tab="reviews" role="tab" aria-selected="false">Reviews</button>
+                        <button class="tab-button" type="button" data-tab="shipping" role="tab" aria-selected="false">Shipping</button>
+                        <button class="tab-button" type="button" data-tab="seller" role="tab" aria-selected="false">About seller</button>
+                    </div>
+
+                    <div class="tab-panel is-active" id="description" role="tabpanel">
+                        <p id="detail-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <table class="spec-table">
+                            <tr><th>Model</th><td>#8786867</td></tr>
+                            <tr><th>Style</th><td>Classic style</td></tr>
+                            <tr><th>Certificate</th><td>ISO-898921212</td></tr>
+                            <tr><th>Size</th><td>34mm x 450mm x 19mm</td></tr>
+                            <tr><th>Memory</th><td>36GB RAM</td></tr>
+                        </table>
+                        <ul class="feature-list">
+                            <li>&#10003; Some great feature name here</li>
+                            <li>&#10003; Lorem ipsum dolor sit amet, consectetur</li>
+                            <li>&#10003; Duis aute irure dolor in reprehenderit</li>
+                            <li>&#10003; Some great feature name here</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-panel" id="reviews" role="tabpanel">
+                        <p>Buyers mention the fabric quality, accurate size, and fast dispatch. Average review score is 4.8 from 32 verified orders.</p>
+                    </div>
+
+                    <div class="tab-panel" id="shipping" role="tabpanel">
+                        <p>Ships worldwide with standard air cargo. Estimated delivery is 7-15 business days depending on destination and order quantity.</p>
+                    </div>
+
+                    <div class="tab-panel" id="seller" role="tabpanel">
+                        <p>Guanjoi Trading LLC is a verified apparel supplier with two years of platform history and full buyer protection.</p>
+                    </div>
+                </section>
+
+                <aside class="you-may-like surface" aria-labelledby="you-may-like-title">
+                    <h2 id="you-may-like-title">You may like</h2>
+                    <a href="#"><img src="../../assets/Layout/alibaba/Image/cloth/image 30.png" alt="Blazer"><span>Men Blazers Sets Elegant Formal</span><strong>$7.00 - $99.50</strong></a>
+                    <a href="#"><img src="../../assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="Shirt"><span>Men Shirt Sleeve Polo Contrast</span><strong>$7.00 - $99.50</strong></a>
+                    <a href="#"><img src="../../assets/Layout/alibaba/Image/cloth/2 1.png" alt="Jacket"><span>Apple Watch Series Space Gray</span><strong>$7.00 - $99.50</strong></a>
+                    <a href="#"><img src="../../assets/Layout/alibaba/Image/cloth/image 26.png" alt="Backpack"><span>New Summer Men's casual T-Shirts</span><strong>$7.00 - $99.50</strong></a>
+                </aside>
+            </div>
+
+            <section class="related surface" aria-labelledby="related-title">
+                <h2 id="related-title">Related products</h2>
+                <div class="related-grid">
+                    <a href="#"><img src="../../assets/Layout/alibaba/Image/cloth/image 24.png" alt="Wallet"><span>Xiaomi Redmi 8 Original</span><strong>$32.00-$40.00</strong></a>
+                    <a href="#"><img src="../../assets/Image/tech/8.png" alt="Watch"><span>Xiaomi Redmi 8 Original</span><strong>$32.00-$40.00</strong></a>
+                    <a href="#"><img src="../../assets/Image/tech/image 86.png" alt="Headphones"><span>Xiaomi Redmi 8 Original</span><strong>$32.00-$40.00</strong></a>
+                    <a href="#"><img src="../../assets/Layout/alibaba/Image/cloth/Bitmap (2).png" alt="Shorts"><span>Xiaomi Redmi 8 Original</span><strong>$32.00-$40.00</strong></a>
+                    <a href="#"><img src="../../assets/Image/tech/image 85.png" alt="Kettle"><span>Xiaomi Redmi 8 Original</span><strong>$32.00-$40.00</strong></a>
+                    <a href="#"><img src="../../assets/Layout/alibaba/Image/cloth/image 24.png" alt="Wallet"><span>Xiaomi Redmi 8 Original</span><strong>$32.00-$40.00</strong></a>
+                </div>
+            </section>
+
+            <section class="promo-banner detail-promo" aria-label="Discount offer">
+                <div>
+                    <h2>Super discount on more than 100 USD</h2>
+                    <p>Have you ever finally just write dummy info</p>
+                </div>
+                <a class="button" href="./product-list.html">Shop now</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main container">
+            <div class="footer-brand">
+                <img src="../../assets/Layout/Brand/logo-colored.png" alt="Brand">
+                <p>Best information about the company goes here but now lorem ipsum is used.</p>
+                <div class="footer-social" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="YouTube">yt</a>
+                </div>
+            </div>
+            <div class="footer-column"><h3>About</h3><a href="#">About Us</a><a href="#">Find store</a><a href="#">Categories</a><a href="#">Blogs</a></div>
+            <div class="footer-column"><h3>Partnership</h3><a href="#">About Us</a><a href="#">Find store</a><a href="#">Categories</a><a href="#">Blogs</a></div>
+            <div class="footer-column"><h3>Information</h3><a href="#">Help Center</a><a href="#">Money Refund</a><a href="#">Shipping</a><a href="#">Contact us</a></div>
+            <div class="footer-column"><h3>For users</h3><a href="#">Login</a><a href="#">Register</a><a href="#">Settings</a><a href="#">My Orders</a></div>
+            <div class="footer-column">
+                <h3>Get app</h3>
+                <div class="app-badges">
+                    <img src="../../assets/Layout/Misc/market-button.png" alt="Download on the App Store">
+                    <img src="../../assets/Layout/Misc/Group.png" alt="Get it on Google Play">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-wrap">
+            <div class="footer-bottom container">
+                <span>&copy; 2023 Ecommerce.</span>
+                <span class="footer-language"><img src="../../assets/Layout1/Image/flags/US@2x.png" alt="United States"> English</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/catalog-data.js"></script>
+    <script src="../js/product-detail.js"></script>
+</body>
+</html>

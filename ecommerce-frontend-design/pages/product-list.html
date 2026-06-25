@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - Product Listing</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/product-list.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-main container">
+            <a class="brand-link" href="./home.html" aria-label="Brand home">
+                <img src="../../assets/Layout/Brand/logo-colored.png" alt="Brand">
+            </a>
+            <form class="header-search" role="search">
+                <input type="search" placeholder="Search" aria-label="Search products">
+                <select aria-label="Select category">
+                    <option>All category</option>
+                    <option>Mobile accessory</option>
+                    <option>Clothes</option>
+                    <option>Home interiors</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+            <nav class="header-actions" aria-label="User tools">
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></a>
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg><span>Message</span></a>
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12v20l-6-3-6 3z"/></svg><span>Orders</span></a>
+                <a class="action-link" href="./cart.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M3 4h2l2.3 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 1.9-1.5L22 8H6"/></svg><span>My cart</span></a>
+            </nav>
+        </div>
+        <div class="header-nav">
+            <div class="nav-row container">
+                <nav class="nav-menu" aria-label="Primary navigation">
+                    <button type="button"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>All category</button>
+                    <a href="#">Hot offers</a>
+                    <a href="#">Gift boxes</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Menu item</a>
+                    <button type="button">Help <span aria-hidden="true">v</span></button>
+                </nav>
+                <div class="nav-meta">
+                    <button type="button">English, USD <span aria-hidden="true">v</span></button>
+                    <button type="button">Ship to <img src="../../assets/Layout1/Image/flags/DE@2x.png" alt="Germany"> <span aria-hidden="true">v</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page catalog-page">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="./home.html">Home</a><span>&gt;</span><a href="#">Clothing</a><span>&gt;</span><a href="#">Men's wear</a><span>&gt;</span><span>Summer clothing</span>
+            </nav>
+
+            <div class="catalog-layout">
+                <aside class="filter-sidebar" aria-label="Product filters">
+                    <section class="filter-group">
+                        <button class="filter-title" type="button">Category</button>
+                        <a href="#">Mobile accessory</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Smartphones</a>
+                        <a href="#">Modern tech</a>
+                        <a href="#" class="filter-link">See all</a>
+                    </section>
+                    <section class="filter-group">
+                        <button class="filter-title" type="button">Brands</button>
+                        <label><input type="checkbox" checked> Samsung</label>
+                        <label><input type="checkbox" checked> Apple</label>
+                        <label><input type="checkbox"> Huawei</label>
+                        <label><input type="checkbox"> Poco</label>
+                        <label><input type="checkbox"> Lenovo</label>
+                        <a href="#" class="filter-link">See all</a>
+                    </section>
+                    <section class="filter-group">
+                        <button class="filter-title" type="button">Features</button>
+                        <label><input type="checkbox" checked> Metallic</label>
+                        <label><input type="checkbox"> Plastic cover</label>
+                        <label><input type="checkbox"> 8GB Ram</label>
+                        <label><input type="checkbox"> Super power</label>
+                        <label><input type="checkbox"> Large Memory</label>
+                        <a href="#" class="filter-link">See all</a>
+                    </section>
+                    <section class="filter-group collapsed"><button class="filter-title" type="button">Price range</button></section>
+                    <section class="filter-group collapsed"><button class="filter-title" type="button">Condition</button></section>
+                    <section class="filter-group collapsed"><button class="filter-title" type="button">Ratings</button></section>
+                    <section class="filter-group collapsed"><button class="filter-title" type="button">Manufacturer</button></section>
+                </aside>
+
+                <section class="catalog-main" aria-label="Product results">
+                    <div class="catalog-toolbar surface">
+                        <strong>12,911 items in Mobile accessory</strong>
+                        <label class="verified-only"><input type="checkbox" checked> Verified only</label>
+                        <select id="sort-products" aria-label="Sort products">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: low to high</option>
+                            <option value="price-high">Price: high to low</option>
+                            <option value="rating">Best rating</option>
+                        </select>
+                        <div class="view-switch" aria-label="View mode">
+                            <button class="view-btn is-active" type="button" data-view="grid" aria-label="Grid view"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></button>
+                            <button class="view-btn" type="button" data-view="list" aria-label="List view"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg></button>
+                        </div>
+                    </div>
+
+                    <div class="chip-row" aria-label="Applied filters">
+                        <button type="button">Samsung <span>x</span></button>
+                        <button type="button">Apple <span>x</span></button>
+                        <button type="button">Poco <span>x</span></button>
+                        <button type="button">Metallic <span>x</span></button>
+                        <button type="button">4 star <span>x</span></button>
+                        <button type="button">3 star <span>x</span></button>
+                        <a href="#">Clear all filter</a>
+                    </div>
+
+                    <div class="listing-grid" id="products-container" aria-live="polite"></div>
+
+                    <div class="catalog-pagination">
+                        <label>Show <select aria-label="Items per page"><option>10</option><option>20</option></select></label>
+                        <nav aria-label="Pagination">
+                            <button type="button" aria-label="Previous page">&lt;</button>
+                            <a class="active" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <button type="button" aria-label="Next page">&gt;</button>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter-band" aria-labelledby="newsletter-title">
+        <h2 id="newsletter-title">Subscribe on our newsletter</h2>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Email" aria-label="Email address">
+            <button class="button button-primary" type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-main container">
+            <div class="footer-brand">
+                <img src="../../assets/Layout/Brand/logo-colored.png" alt="Brand">
+                <p>Best information about the company goes here but now lorem ipsum is used.</p>
+                <div class="footer-social" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="YouTube">yt</a>
+                </div>
+            </div>
+            <div class="footer-column"><h3>About</h3><a href="#">About Us</a><a href="#">Find store</a><a href="#">Categories</a><a href="#">Blogs</a></div>
+            <div class="footer-column"><h3>Partnership</h3><a href="#">About Us</a><a href="#">Find store</a><a href="#">Categories</a><a href="#">Blogs</a></div>
+            <div class="footer-column"><h3>Information</h3><a href="#">Help Center</a><a href="#">Money Refund</a><a href="#">Shipping</a><a href="#">Contact us</a></div>
+            <div class="footer-column"><h3>For users</h3><a href="#">Login</a><a href="#">Register</a><a href="#">Settings</a><a href="#">My Orders</a></div>
+            <div class="footer-column">
+                <h3>Get app</h3>
+                <div class="app-badges">
+                    <img src="../../assets/Layout/Misc/market-button.png" alt="Download on the App Store">
+                    <img src="../../assets/Layout/Misc/Group.png" alt="Get it on Google Play">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-wrap">
+            <div class="footer-bottom container">
+                <span>&copy; 2023 Ecommerce.</span>
+                <span class="footer-language"><img src="../../assets/Layout1/Image/flags/US@2x.png" alt="United States"> English</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/catalog-data.js"></script>
+    <script src="../js/product-list.js"></script>
+</body>
+</html>

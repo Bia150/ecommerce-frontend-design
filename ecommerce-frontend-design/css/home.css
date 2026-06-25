@@ -1,0 +1,495 @@
+.home-page {
+  display: grid;
+  gap: 20px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr) 220px;
+  gap: 18px;
+  padding: 18px;
+}
+
+.category-menu {
+  display: grid;
+  align-content: start;
+}
+
+.category-menu a {
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  color: #505f6f;
+  font-size: 14px;
+}
+
+.category-menu a:hover,
+.category-menu a:first-child {
+  background: #e5f1ff;
+  color: var(--color-text);
+}
+
+.hero-banner {
+  min-height: 360px;
+  border-radius: var(--radius-md);
+  background: #b7eadf url("../../assets/Image/backgrounds/Banner-board-800x420 2.png") center right / cover no-repeat;
+  padding: 54px 46px;
+}
+
+.hero-banner p {
+  margin-bottom: 2px;
+  font-size: 28px;
+}
+
+.hero-banner h1 {
+  max-width: 320px;
+  margin-bottom: 18px;
+  font-size: 34px;
+  line-height: 1.08;
+}
+
+.hero-side {
+  display: grid;
+  gap: 12px;
+}
+
+.join-card {
+  display: grid;
+  gap: 8px;
+  border-radius: var(--radius-md);
+  background: #e3f0ff;
+  padding: 14px;
+}
+
+.join-card__user {
+  min-height: 50px;
+  padding-left: 52px;
+  background:
+    radial-gradient(circle at 22px 22px, #c7d8eb 0 20px, transparent 21px),
+    linear-gradient(#c7d8eb, #c7d8eb) 14px 42px / 18px 8px no-repeat;
+  font-size: 13px;
+}
+
+.join-card__user strong {
+  display: block;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.promo-card {
+  display: flex;
+  min-height: 95px;
+  align-items: center;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.promo-card-orange {
+  background: #f38332;
+}
+
+.promo-card-teal {
+  background: #55bdc3;
+}
+
+.deals-row {
+  display: grid;
+  grid-template-columns: 235px repeat(5, 1fr);
+  overflow: hidden;
+}
+
+.deals-info {
+  padding: 20px;
+  border-right: 1px solid var(--color-border);
+}
+
+.deals-info h2 {
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.deals-info p {
+  margin-bottom: 18px;
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.deal-timer {
+  display: grid;
+  grid-template-columns: repeat(4, 45px);
+  gap: 6px;
+}
+
+.deal-timer span {
+  display: grid;
+  min-height: 50px;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  background: var(--color-dark-panel);
+  color: #fff;
+  font-size: 11px;
+}
+
+.deal-timer strong {
+  font-size: 16px;
+}
+
+.deal-item {
+  display: grid;
+  min-width: 0;
+  place-items: center;
+  gap: 8px;
+  border-right: 1px solid var(--color-border);
+  padding: 18px 10px;
+  text-align: center;
+}
+
+.deal-item:last-child {
+  border-right: 0;
+}
+
+.deal-item img {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+}
+
+.deal-item span {
+  color: var(--color-text);
+  font-size: 13px;
+}
+
+.deal-item strong {
+  border-radius: 999px;
+  background: #ffe3e3;
+  color: #eb001b;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  overflow: hidden;
+}
+
+.showcase-promo {
+  min-height: 260px;
+  padding: 24px;
+  background-position: center;
+  background-size: cover;
+}
+
+.showcase-promo h2 {
+  max-width: 180px;
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 1.15;
+}
+
+.showcase-home {
+  background-image: linear-gradient(rgba(255, 244, 223, 0.68), rgba(255, 244, 223, 0.68)), url("../../assets/Image/backgrounds/Group 969.png");
+}
+
+.showcase-electronics {
+  background-image: linear-gradient(rgba(220, 236, 255, 0.72), rgba(220, 236, 255, 0.72)), url("../../assets/Image/backgrounds/image 98.png");
+}
+
+.showcase-products {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.showcase-products a {
+  position: relative;
+  min-height: 130px;
+  border-left: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 16px 90px 16px 18px;
+}
+
+.showcase-products a:nth-last-child(-n + 4) {
+  border-bottom: 0;
+}
+
+.showcase-products span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-text);
+  font-size: 14px;
+}
+
+.showcase-products small {
+  color: var(--color-muted);
+  font-size: 13px;
+}
+
+.showcase-products img {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+}
+
+.supplier-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 430px;
+  gap: 44px;
+  min-height: 420px;
+  border-radius: var(--radius-md);
+  background: #1777e5 url("../../assets/Image/backgrounds/Group 982.png") center / cover no-repeat;
+  color: #fff;
+  padding: 42px;
+}
+
+.supplier-copy h2 {
+  max-width: 440px;
+  margin-bottom: 14px;
+  font-size: 32px;
+  line-height: 1.15;
+}
+
+.supplier-copy p {
+  max-width: 400px;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.request-card {
+  display: grid;
+  align-self: start;
+  gap: 12px;
+  border-radius: var(--radius-md);
+  background: #fff;
+  box-shadow: var(--shadow-md);
+  color: var(--color-text);
+  padding: 22px;
+}
+
+.request-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.request-card input,
+.request-card textarea,
+.request-card select {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px;
+  color: var(--color-text);
+  font-size: 13px;
+  outline: 0;
+}
+
+.request-card textarea {
+  min-height: 86px;
+  resize: vertical;
+}
+
+.request-row {
+  display: grid;
+  grid-template-columns: 1fr 110px;
+  gap: 8px;
+}
+
+.recommended {
+  padding-top: 6px;
+}
+
+.recommended-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.services {
+  padding-top: 6px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: #fff;
+}
+
+.service-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.service-card span {
+  display: block;
+  min-height: 62px;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.regions {
+  padding-top: 6px;
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px 24px;
+}
+
+.region-grid a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-subtle);
+  font-size: 13px;
+}
+
+.region-grid img {
+  width: 28px;
+  height: 20px;
+  object-fit: cover;
+}
+
+@media (max-width: 1100px) {
+  .hero-grid {
+    grid-template-columns: 210px 1fr;
+  }
+
+  .hero-side {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .deals-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .deals-info {
+    grid-column: 1 / -1;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .recommended-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .showcase,
+  .supplier-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner {
+    min-height: 300px;
+  }
+
+  .showcase-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .showcase-products a:nth-last-child(-n + 4) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .showcase-products a:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .supplier-banner {
+    gap: 24px;
+  }
+
+  .service-grid,
+  .region-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-grid,
+  .deals-row,
+  .showcase,
+  .supplier-banner {
+    width: min(100% - 20px, var(--container));
+  }
+
+  .hero-side {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner {
+    padding: 30px 24px;
+  }
+
+  .hero-banner p {
+    font-size: 22px;
+  }
+
+  .hero-banner h1 {
+    font-size: 28px;
+  }
+
+  .deals-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .deals-info {
+    grid-column: 1 / -1;
+  }
+
+  .showcase-products {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-products a,
+  .showcase-products a:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--color-border);
+    border-left: 0;
+  }
+
+  .supplier-banner {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .supplier-copy h2 {
+    font-size: 26px;
+  }
+
+  .request-row {
+    grid-template-columns: 1fr;
+  }
+
+  .recommended-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product-tile__image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .recommended-grid,
+  .service-grid,
+  .region-grid {
+    grid-template-columns: 1fr;
+  }
+}

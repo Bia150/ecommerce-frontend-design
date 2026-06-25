@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand - Cart</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <header class="site-header cart-header">
+        <div class="cart-header-row container">
+            <a class="brand-link" href="./home.html" aria-label="Brand home">
+                <img src="../../assets/Layout/Brand/logo-colored.png" alt="Brand">
+            </a>
+            <nav class="header-actions cart-header-actions" aria-label="User tools">
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="7" r="4"/></svg><span>Profile</span></a>
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg><span>Message</span></a>
+                <a class="action-link" href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h12v20l-6-3-6 3z"/></svg><span>Orders</span></a>
+                <a class="action-link" href="./cart.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M3 4h2l2.3 11.5a2 2 0 0 0 2 1.5h8.8a2 2 0 0 0 1.9-1.5L22 8H6"/></svg><span>My cart</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page cart-page">
+        <div class="container">
+            <h1 class="cart-title">My cart (3)</h1>
+            <div class="cart-layout">
+                <section class="cart-items surface" aria-label="Cart items">
+                    <div id="stored-cart-items"></div>
+                    <article class="cart-item" data-price="710.91">
+                        <img src="../../assets/Layout/alibaba/Image/cloth/Bitmap.png" alt="Blue shirt">
+                        <div class="cart-item-info">
+                            <h2>T-shirts with multiple colors, for men and lady</h2>
+                            <p>Size: medium, Color: blue, Material: Plastic</p>
+                            <p>Seller: Artel Market</p>
+                            <div class="cart-item-actions">
+                                <button type="button" class="remove-item">Remove</button>
+                                <button type="button">Save for later</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-side">
+                            <strong class="cart-line-price">$78.99</strong>
+                            <select class="qty-select" aria-label="Quantity">
+                                <option>Qty: 9</option>
+                                <option>Qty: 1</option>
+                                <option>Qty: 2</option>
+                                <option>Qty: 3</option>
+                            </select>
+                        </div>
+                    </article>
+
+                    <article class="cart-item" data-price="522.56">
+                        <img src="../../assets/Layout/alibaba/Image/cloth/image 26.png" alt="Blue backpack">
+                        <div class="cart-item-info">
+                            <h2>T-shirts with multiple colors, for men and lady</h2>
+                            <p>Size: medium, Color: blue, Material: Plastic</p>
+                            <p>Seller: Best factory LLC</p>
+                            <div class="cart-item-actions">
+                                <button type="button" class="remove-item">Remove</button>
+                                <button type="button">Save for later</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-side">
+                            <strong class="cart-line-price">$38.00</strong>
+                            <select class="qty-select" aria-label="Quantity">
+                                <option>Qty: 3</option>
+                                <option>Qty: 1</option>
+                                <option>Qty: 2</option>
+                                <option>Qty: 4</option>
+                            </select>
+                        </div>
+                    </article>
+
+                    <article class="cart-item" data-price="170.50">
+                        <img src="../../assets/Image/interior/image 89.png" alt="Chair cover">
+                        <div class="cart-item-info">
+                            <h2>T-shirts with multiple colors, for men and lady</h2>
+                            <p>Size: medium, Color: blue, Material: Plastic</p>
+                            <p>Seller: Artel Market</p>
+                            <div class="cart-item-actions">
+                                <button type="button" class="remove-item">Remove</button>
+                                <button type="button">Save for later</button>
+                            </div>
+                        </div>
+                        <div class="cart-item-side">
+                            <strong class="cart-line-price">$170.50</strong>
+                            <select class="qty-select" aria-label="Quantity">
+                                <option>Qty: 1</option>
+                                <option>Qty: 2</option>
+                                <option>Qty: 3</option>
+                            </select>
+                        </div>
+                    </article>
+
+                    <div class="cart-actions-row">
+                        <a class="button button-primary" href="./product-list.html">Back to shop</a>
+                        <button class="button button-outline" type="button" id="remove-all">Remove all</button>
+                    </div>
+                </section>
+
+                <aside class="checkout-column" aria-label="Checkout summary">
+                    <form class="coupon-card surface">
+                        <label for="coupon">Have a coupon?</label>
+                        <div>
+                            <input id="coupon" type="text" placeholder="Add coupon">
+                            <button type="submit">Apply</button>
+                        </div>
+                    </form>
+
+                    <section class="summary-card surface">
+                        <dl>
+                            <div><dt>Subtotal:</dt><dd id="subtotal">$1403.97</dd></div>
+                            <div class="discount"><dt>Discount:</dt><dd>- $60.00</dd></div>
+                            <div class="tax"><dt>Tax:</dt><dd>+ $14.00</dd></div>
+                            <div class="total"><dt>Total:</dt><dd id="total">$1357.97</dd></div>
+                        </dl>
+                        <button class="checkout-button" type="button">Checkout</button>
+                        <div class="payment-row" aria-label="Payment methods">
+                            <span>VISA</span><span>MC</span><span>Pay</span><span>AMEX</span>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+
+            <section class="cart-benefits" aria-label="Shopping benefits">
+                <div><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4z"/><path d="M4 7l8 6 8-6"/></svg></span><strong>Secure payment</strong><small>Have you ever finally just</small></div>
+                <div><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></span><strong>Customer support</strong><small>Have you ever finally just</small></div>
+                <div><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h13v10H3z"/><path d="M16 10h3l2 3v4h-5z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></span><strong>Free delivery</strong><small>Have you ever finally just</small></div>
+            </section>
+
+            <section class="saved-section surface" aria-labelledby="saved-title">
+                <h2 id="saved-title">Saved for later</h2>
+                <div class="saved-grid">
+                    <article>
+                        <span><img src="../../assets/Image/tech/image 32.png" alt="Tablet"></span>
+                        <strong>$99.50</strong>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                        <button type="button">Move to cart</button>
+                    </article>
+                    <article>
+                        <span><img src="../../assets/Image/tech/image 23.png" alt="Phone"></span>
+                        <strong>$99.50</strong>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                        <button type="button">Move to cart</button>
+                    </article>
+                    <article>
+                        <span><img src="../../assets/Image/tech/8.png" alt="Watch"></span>
+                        <strong>$99.50</strong>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                        <button type="button">Move to cart</button>
+                    </article>
+                    <article>
+                        <span><img src="../../assets/Image/tech/image 34.png" alt="Laptop"></span>
+                        <strong>$99.50</strong>
+                        <p>GoPro HERO6 4K Action Camera - Black</p>
+                        <button type="button">Move to cart</button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="promo-banner cart-promo" aria-label="Discount offer">
+                <div>
+                    <h2>Super discount on more than 100 USD</h2>
+                    <p>Have you ever finally just write dummy info</p>
+                </div>
+                <a class="button" href="./product-list.html">Shop now</a>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-main container">
+            <div class="footer-brand">
+                <img src="../../assets/Layout/Brand/logo-colored.png" alt="Brand">
+                <p>Best information about the company goes here but now lorem ipsum is used.</p>
+                <div class="footer-social" aria-label="Social links">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="Twitter">t</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="YouTube">yt</a>
+                </div>
+            </div>
+            <div class="footer-column"><h3>About</h3><a href="#">About Us</a><a href="#">Find store</a><a href="#">Categories</a><a href="#">Blogs</a></div>
+            <div class="footer-column"><h3>Partnership</h3><a href="#">About Us</a><a href="#">Find store</a><a href="#">Categories</a><a href="#">Blogs</a></div>
+            <div class="footer-column"><h3>Information</h3><a href="#">Help Center</a><a href="#">Money Refund</a><a href="#">Shipping</a><a href="#">Contact us</a></div>
+            <div class="footer-column"><h3>For users</h3><a href="#">Login</a><a href="#">Register</a><a href="#">Settings</a><a href="#">My Orders</a></div>
+            <div class="footer-column">
+                <h3>Get app</h3>
+                <div class="app-badges">
+                    <img src="../../assets/Layout/Misc/market-button.png" alt="Download on the App Store">
+                    <img src="../../assets/Layout/Misc/Group.png" alt="Get it on Google Play">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-wrap">
+            <div class="footer-bottom container">
+                <span>&copy; 2023 Ecommerce.</span>
+                <span class="footer-language"><img src="../../assets/Layout1/Image/flags/US@2x.png" alt="United States"> English</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
